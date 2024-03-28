@@ -4,7 +4,23 @@
 
 - Need locally sourced/running language model 
 - Need to modify to work with a local embedder not reaching out to OpenAI
-- Need to use a LocalDB like Chroma not Pinecone 
+- Need to use a LocalDB like Chroma not Pinecone
+
+## Add .env file with the following variables 
+SECRET_KEY=123
+SQLALCHEMY_DATABASE_URI=sqlite:///sqlite.db
+UPLOAD_URL=
+
+OPENAI_API_KEY=
+
+REDIS_URI=redis://localhost:6379
+
+PINECONE_API_KEY=
+PINECONE_ENV_NAME=
+PINECONE_INDEX_NAME=
+
+LANGFUSE_PUBLIC_KEY=
+LANGFUSE_SECRET_KEY=
 
 ## Using Pipenv [Recommended]
 
