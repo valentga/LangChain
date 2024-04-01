@@ -59,6 +59,8 @@ def build_chat(chat_args: ChatArgs):
         memory=memory_name
     )
 
+    # need this to have two separate language models for streaming to accurately capture chat history so 
+    # the LLM does not try and close the chain after the streaming ends and there are no new tokens
     condense_question_llm = ChatOpenAI(streaming=False)
 
     return StreamingConversationalRetrievalChain.from_llm(
