@@ -187,3 +187,8 @@ Then:
 ```
 flask --app app.web init-db
 ```
+
+# Screenshots of Application 
+
+This is what it looks like when chatting with one of the uploaded PDF documents 
+![image](https://github.com/valentga/LangChain/assets/25712448/1691a45c-78e8-4011-8927-956d2177c916)
