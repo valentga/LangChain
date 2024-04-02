@@ -189,6 +189,11 @@ flask --app app.web init-db
 ```
 
 # Screenshots of Application 
+Main landing page of the application where you can see all of your uploaded PDF files: 
 
-This is what it looks like when chatting with one of the uploaded PDF documents 
+![image](https://github.com/valentga/LangChain/assets/25712448/555752ea-f68e-4a71-af1b-5913a4b39567)
+
+
+ChatBot interface for interacting with the uploaded PDF documents: 
+
 ![image](https://github.com/valentga/LangChain/assets/25712448/1691a45c-78e8-4011-8927-956d2177c916)
