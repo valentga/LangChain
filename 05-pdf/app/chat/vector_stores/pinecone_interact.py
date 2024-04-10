@@ -5,7 +5,8 @@ sys.path.append(str(path_root))
 import os 
 import pinecone
 from langchain.vectorstores.pinecone import Pinecone
-from app.chat.embeddings.openai import embeddings
+#from app.chat.embeddings.openai import embeddings
+from app.chat.embeddings.huggingface_embeddings import hf_embeddings
 
 pinecone.init(
     api_key=os.getenv("PINECONE_API_KEY"),
@@ -13,8 +14,9 @@ pinecone.init(
 )
 
 vector_store = Pinecone.from_existing_index(
-    os.getenv("PINECONE_INDEX_NAME"),
-    embeddings
+    'huggingface-embeddings',
+    #os.getenv("PINECONE_INDEX_NAME"),
+    hf_embeddings
 )
 
 def build_retriever(chat_args, k):
